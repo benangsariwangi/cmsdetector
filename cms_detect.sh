@@ -23,7 +23,7 @@ echo -e " $green
 
 
 "
-tput sgr0
+		tput sgr0
 printf "     Input Mass Target : ";read url;
 echo ""
 sleep 1;
@@ -44,8 +44,14 @@ if [[ $page =~ "request" ]]; then
 	echo -e "$BlueF     [!] Scanning -> "$scan;
 	echo ""
 	echo -e "$white     Code [$BlueF $code $white] , Status [$green $message $white] $white CMS [$red $cms $white]"
+	echo ""
 	tput sgr0
 	echo ""
 	sleep 10;
-fi	
+	echo $scan "$cms">> result.txt
+fi
 done
+echo -e "$BlueF     [+] Scanning Completed, Result saved to result.txt ";
+echo ""
+echo ""
+tput sgr0
