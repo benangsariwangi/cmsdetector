@@ -9,7 +9,22 @@ red='\e[1;31m'
 yellow='\e[1;33m'
 BlueF='\e[1;34m'
 clear
-printf "Input Mass Target : ";read url;
+echo -e " $green
+   ____ __  __ ____    ____  _____ _____ _____ ____ _____ ___  ____  
+   / ___|  \/  / ___|  |  _ \| ____|_   _| ____/ ___|_   _/ _ \|  _ \ 
+  | |   | |\/| \___ \  | | | |  _|   | | |  _|| |     | || | | | |_) |
+  | |___| |  | |___) | | |_| | |___  | | | |__| |___  | || |_| |  _ < 
+   \____|_|  |_|____/  |____/|_____| |_| |_____\____| |_| \___/|_| \_|
+
+"$white"
+          --+=[ Code By "$okegreen":"$BlueF" ./malesmandii       "$white"        ]=+--
+          --+=[ Github  "$okegreen":"$BlueF" www.github.com/"prabs401     $white"    ]=+--
+          --+=[ Credits "$okegreen": "$BlueF"backboxindonesia.or.id     "$white" ]=+-- 
+
+
+"
+		tput sgr0
+printf "     Input Mass Target : ";read url;
 echo ""
 sleep 1;
 
@@ -26,9 +41,9 @@ if [[ $page =~ "request" ]]; then
 
 	sleep 1;
 	echo ""
-	echo -e "$BlueF [!] Scanning -> "$scan;
+	echo -e "$BlueF     [!] Scanning -> "$scan;
 	echo ""
-	echo -e "$white Code [$BlueF $code $white] , Status [$green $message $white] $white CMS [$red $cms $white]"
+	echo -e "$white     Code [$BlueF $code $white] , Status [$green $message $white] $white CMS [$red $cms $white]"
 	tput sgr0
 	echo ""
 	sleep 10;
