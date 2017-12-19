@@ -1,2 +1,1 @@
-# cmsdetector
-[Bash] CMS Detector
+# [Bash] Simple CMS Detector
